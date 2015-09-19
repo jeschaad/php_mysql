@@ -14,5 +14,6 @@
 
 			?>
 		</p>
+		<img src="../PoweredByMacOSX.gif">
 	</body>
 </html>
