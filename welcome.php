@@ -8,11 +8,19 @@
 	</head>
 	<body>
 		<?php
+<<<<<<< HEAD
 			$firstname = $_REQUEST['firstname'];
 			$lastname = $_REQUEST['lastname'];
 			echo 'Welcome to our website, ' . 
 			htmlspecialchars($firstname, ENT_QUOTES, 'UTF-8') . ' ' . 
 			htmlspecialchars($lastname, ENT_QUOTES, 'UTF-8') . '!';
+=======
+			$name = $_REQUEST['name'];
+			if ( $name == 'Jim' ) {
+				echo 'All systems are operating within normal parameters.';
+			}
+#			echo 'Welcome to our website, ' . $name . '!';
+>>>>>>> ae1568d... Updated welcome.php for exercise 7
 		?>
 	</body>
 </html>
