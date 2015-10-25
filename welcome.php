@@ -12,7 +12,10 @@
 			if ( $name == 'Jim' ) {
 				echo 'All systems are operating within normal parameters.';
 			}
-#			echo 'Welcome to our website, ' . $name . '!';
+			else {
+				echo 'Welcome to our website, ' . 
+				htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '!';
+			}
 		?>
 	</body>
 </html>
