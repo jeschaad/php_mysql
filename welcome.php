@@ -8,13 +8,15 @@
 	</head>
 	<body>
 		<?php
-			$name = $_REQUEST['name'];
-			if ( $name == 'Jim' ) {
+			$firstname = $_REQUEST['firstname'];
+			$lastname = $_REQUEST['lastname'];
+			if ( $firstname == 'Jim' and $lastname == 'Schaad' ) {
 				echo 'All systems are operating within normal parameters.';
 			}
 			else {
 				echo 'Welcome to our website, ' . 
-				htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '!';
+				htmlspecialchars($firstname, ENT_QUOTES, 'UTF-8') . ' ' . 
+				htmlspecialchars($lastname, ENT_QUOTES, 'UTF-8') . '!';
 			}
 		?>
 	</body>
