@@ -1,5 +1,5 @@
 <?php
-$link = mysqli_connect('localhost', 'root', '');
+$link = mysqli_connect('localhost', 'root', 'password');
 if (!$link) {
   $output = 'Unable to connect to the database server.';
   include 'output.html.php';
