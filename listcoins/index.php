@@ -16,7 +16,7 @@ if (!mysqli_select_db($link, 'librecoin')) {
   exit();
 }
 
-$result = mysqli_query($link, 'SELECT item FROM librecoin');
+$result = mysqli_query($link, 'SELECT * FROM item');
 if (!$result) {
   $error = 'Error fetching items: ' . mysqli_error($link);
   include 'error.html.php';
