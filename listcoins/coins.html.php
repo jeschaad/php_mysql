@@ -10,7 +10,7 @@
 		<p>Here are all the coins in the database:</p>
 			<?php foreach ($coins as $coin): ?>
 			  <blockquote><p>
-			  <?php echo htmlspecialchars($joke, ENT_QUOTES, 'UTF-8'); ?>
+			  <?php echo htmlspecialchars($coin, ENT_QUOTES, 'UTF-8'); ?>
 		  </p></blockquote>
 		<?php endforeach; ?>
 	</body>
