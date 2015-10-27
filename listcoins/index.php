@@ -24,7 +24,7 @@ if (!$result) {
 }
 
 while ($row = mysqli_fetch_array($result)) {
-  $coins[] = $row['item'];
+  $coins[] = $row['name'];
 }
 include 'coins.html.php';
 ?>
